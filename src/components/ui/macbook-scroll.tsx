@@ -23,6 +23,7 @@ import { IconWorld } from "@tabler/icons-react";
 import { IconCommand } from "@tabler/icons-react";
 import { IconCaretLeftFilled } from "@tabler/icons-react";
 import { IconCaretDownFilled } from "@tabler/icons-react";
+import MacScreen from "./mac-screen";
 
 
 export const MacbookScroll = ({
@@ -68,18 +69,18 @@ export const MacbookScroll = ({
   return (
     <div
       ref={ref}
-      className="flex min-h-[200vh] shrink-0 scale-[0.35] transform flex-col items-center justify-start py-0 [perspective:800px] sm:scale-50 md:scale-100 md:py-80"
+      className="flex md:min-h-[270vh] shrink-0 scale-[0.35] transform flex-col items-center justify-start py-0 [perspective:800px] sm:scale-80 md:scale-110 md:py-80"
     >
       <motion.h2
         style={{
           translateY: textTransform,
           opacity: textOpacity,
         }}
-        className="mb-20 text-center text-3xl font-bold text-neutral-800 dark:text-white"
+        className="mb-20 text-center text-3xl font-bold text-neutral-400 dark:text-white"
       >
         {title || (
           <span>
-            This Macbook is built with Tailwindcss. <br /> No kidding.
+            Skills That  <br /> Power My Work.
           </span>
         )}
       </motion.h2>
@@ -165,11 +166,10 @@ export const Lid = ({
         className="absolute inset-0 h-96 w-[32rem] rounded-2xl bg-[#010101] p-2"
       >
         <div className="absolute inset-0 rounded-lg bg-[#272729]" />
-        <img
-          src={src as string}
-          alt="aceternity logo"
-          className="absolute inset-0 h-full w-full rounded-lg object-cover object-left-top"
-        />
+        <div
+          className="absolute inset-0 h-full w-full rounded-lg object-cover object-left-top">
+            <MacScreen />
+          </div>
       </motion.div>
     </div>
   );
@@ -638,18 +638,22 @@ const AceternityLogo = () => {
     <svg
       width="66"
       height="65"
-      viewBox="0 0 66 65"
+      viewBox="0 0 200 60"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="h-3 w-3 text-white"
+      className="h-12 w-36 text-neutral-600"
     >
-      <path
-        d="M8 8.05571C8 8.05571 54.9009 18.1782 57.8687 30.062C60.8365 41.9458 9.05432 57.4696 9.05432 57.4696"
+      <text
+        x="32"
+        y="45"
+        fontSize="40"
+        fontWeight="bold"
         stroke="currentColor"
-        strokeWidth="15"
-        strokeMiterlimit="3.86874"
-        strokeLinecap="round"
-      />
+        strokeWidth="2"
+        fill="currentColor"
+      >
+        SKILLS
+        </text>
     </svg>
   );
 };

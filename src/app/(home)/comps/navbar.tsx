@@ -28,6 +28,13 @@ export function NavbarDemo() {
     },
   ];
 
+  const handleScrollTo = (id: string) => {
+    const el = document.querySelector(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
@@ -38,7 +45,13 @@ export function NavbarDemo() {
           <NavbarLogo />
           <NavItems items={navItems} />
           <div className="flex items-center gap-4">
-            <NavbarButton variant="primary">Download CV</NavbarButton>
+             {/* TODO: LINK TO DOWNLOAD CV */}
+              <NavbarButton 
+                variant="primary"
+                onClick={() => {
+                  window.open("https://www.google.com", "_blank");
+                }}
+                >Download CV</NavbarButton>
           </div>
         </NavBody>
 
@@ -60,7 +73,9 @@ export function NavbarDemo() {
               <a
                 key={`mobile-link-${idx}`}
                 href={item.link}
-                onClick={() => setIsMobileMenuOpen(false)}
+                onClick={() => {
+                  handleScrollTo(item.link);
+                  setIsMobileMenuOpen(false)}}
                 className="relative text-neutral-600 dark:text-neutral-300"
               >
                 <span className="block">{item.name}</span>
@@ -68,7 +83,9 @@ export function NavbarDemo() {
             ))}
             <div className="flex w-full flex-col gap-4">
               <NavbarButton
-                onClick={() => {}}//TODO: LINK TO DOWNLOAD CV
+                onClick={() => {
+                  window.open("https://www.google.com", "_blank");
+                }}//TODO: LINK TO DOWNLOAD CV
                 variant="primary"
                 className="w-full"
               >
