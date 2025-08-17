@@ -66,6 +66,7 @@ const AboutMe = () => {
 
           {/* Image Section */}
           <div className="flex items-center justify-center order-1 lg:order-2">
+            @ts-ignore
             <img
               src="http://googleusercontent.com/file_content/0"
               alt="A photo of Suhaib"

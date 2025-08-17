@@ -1,10 +1,12 @@
 "use client";
 import React from "react";
-import { motion } from "motion/react";
+import { motion, Transition } from "motion/react";
 
+type HoveredLinkProps = React.AnchorHTMLAttributes<HTMLAnchorElement> & {
+  children: React.ReactNode;
+};
 
-
-const transition = {
+const transition: Transition = {
   type: "spring",
   mass: 0.5,
   damping: 11.5,
@@ -109,11 +111,11 @@ export const ProductItem = ({
   );
 };
 
-export const HoveredLink = ({ children, ...rest }: any) => {
+export const HoveredLink: React.FC<HoveredLinkProps> = ({ children, ...rest }) => {
   return (
     <a
       {...rest}
-      className="text-neutral-700 dark:text-neutral-200 hover:text-black "
+      className={`text-neutral-700 dark:text-neutral-200 hover:text-black ${rest.className ?? ""}`}
     >
       {children}
     </a>
