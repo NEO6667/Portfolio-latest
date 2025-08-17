@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 💼 Personal Portfolio Website – Software Development Engineer
 
-## Getting Started
+This repository contains my **personal portfolio website** designed to showcase my skills, projects, and achievements as a **Software Development Engineer (SDE)**.  
+It highlights my **expertise in full-stack development, problem-solving, and scalable system design**, and serves as a central hub for recruiters, hiring managers, and collaborators to explore my work.
 
-First, run the development server:
+---
 
-```bash
+## 🚀 Key Highlights
+
+- 🏆 **Professional Branding** – Built to create a strong personal brand for tech roles (SDE / Full Stack / Backend)
+- 👨‍💻 **Projects Section** – Displays production-level projects with live demos & GitHub source
+- 📄 **Resume Integration** – Downloadable ATS-optimized resume
+- 📬 **Contact Section** – Easy ways for recruiters to connect (Email, LinkedIn, GitHub)
+- 📱 **Responsive Design** – Mobile-first and optimized for multiple devices
+- ⚡ **Performance & SEO** – Fast-loading, SEO-friendly design to rank on search engines
+- 🎨 **Modern UI/UX** – Minimal, clean, and professional look
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js (React.js)  
+- **Styling:** Tailwind CSS  
+- **Deployment:** Vercel (CI/CD enabled)  
+- **Version Control:** Git & GitHub  
+- **Other Tools:** ESLint, Prettier, Google Analytics, SEO Meta Tags  
+
+---
+
+## 📂 Folder Structure
+
+portfolio/
+├── public/ # Static assets (images, favicon, resume.pdf)
+├── app/ or pages/ # Next.js routing
+├── components/ # Modular UI components
+├── styles/ # Global styles (Tailwind / CSS)
+├── package.json
+└── README.md
+
+yaml
+Copy
+Edit
+
+---
+
+## ⚙️ Installation & Setup
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/portfolio.git
+   cd portfolio
+Install dependencies
+
+bash
+Copy
+Edit
+npm install
+# or
+yarn install
+Run the development server
+
+bash
+Copy
+Edit
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+App runs at: http://localhost:3000
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🌐 Deployment
+Deployed on Vercel with automatic CI/CD.
+Push updates to the main branch → auto-deployed live.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+📸 Screenshots (Optional)
+Add screenshots/GIFs of your portfolio here.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🧑‍💻 About Me
+I am an Aspiring Software Development Engineer (SDE) with expertise in:
 
-## Learn More
+Full Stack Web Development (React, Next.js, Node.js, Express, MongoDB)
 
-To learn more about Next.js, take a look at the following resources:
+Data Structures & Algorithms (C++/JavaScript)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+System Design & Scalable Applications
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Cloud & DevOps basics (AWS, Docker, CI/CD)
 
-## Deploy on Vercel
+📬 Contact
+Portfolio Live: your-portfolio-link.com
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+GitHub: github.com/NEO6667
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Email: princeyashc7568@gmail.com

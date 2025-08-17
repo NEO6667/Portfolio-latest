@@ -49,7 +49,7 @@ export function NavbarDemo() {
               <NavbarButton 
                 variant="primary"
                 onClick={() => {
-                  window.open("https://www.google.com", "_blank");
+                  window.open("https://drive.google.com/file/d/1GiznSZd0TMcRUXzrJvbTNTN2tJq6YiRT/view?usp=sharing", "_blank");
                 }}
                 >Download CV</NavbarButton>
           </div>

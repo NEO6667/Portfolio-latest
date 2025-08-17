@@ -1,6 +1,8 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 
 const ContactPage = () => {
@@ -30,7 +32,7 @@ const ContactPage = () => {
           to_email: "princeyashc7568@gmail.com",
           message: formData.message,
         },
-        "pn-dp8x7nngLnbSvxAIa"
+        "oXleLzeeQbF5cIX1a"
       );
       setFormData({ name: "", email: "", message: "" });
       toast.success("Message sent successfully!");
@@ -39,10 +41,6 @@ const ContactPage = () => {
       toast.error("Something went wrong!");
     }
   }
-
-  // service_2dy95d3
-  // template_7l97rz5
-
 
   return ( 
     <div className="bg-[rgb(18,17,17)] text-zinc-400 min-h-screen flex flex-col">
@@ -55,9 +53,9 @@ const ContactPage = () => {
             Let&apos;s work together! Fill out the form or reach me directly at:
           </p>
           <div className="space-y-4">
-            <p><span className="font-semibold text-white">Email:</span> example@email.com</p>
-            <p><span className="font-semibold text-white">Phone:</span> +91 98765 43210</p>
-            <p><span className="font-semibold text-white">Location:</span> Guwahati, India</p>
+            <p><span className="font-semibold text-white">Email:</span> princeyashc7568@gmail.com</p>
+            <p><span className="font-semibold text-white">Phone:</span> +91 8299549930</p>
+            <p><span className="font-semibold text-white">Location:</span> Lucknow, India</p>
           </div>
         </div>
 
@@ -122,9 +120,9 @@ const ContactPage = () => {
           © {new Date().getFullYear()} Your Name. All rights reserved.
         </p>
         <div className="mt-2 flex justify-center space-x-4">
-          <a href="#" className="hover:text-cyan-400 transition">Twitter</a>
-          <a href="#" className="hover:text-cyan-400 transition">LinkedIn</a>
-          <a href="#" className="hover:text-cyan-400 transition">GitHub</a>
+          <motion.a whileHover={{scale: 1.5}} target="_blank" href="#" className="hover:text-pink-400 transition"><FaTwitter /></motion.a>
+          <motion.a whileHover={{scale: 1.5}} target="_blank" href="#" className="hover:text-blue-600 transition"><FaLinkedin /></motion.a>
+          <motion.a whileHover={{scale: 1.5}} target="_blank" href="#" className="hover:text-gray-400 transition"><FaGithub /></motion.a>
         </div>
       </footer>
     </div>
